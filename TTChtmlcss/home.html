@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME | Tyler, The Creator</title>
+    <link rel="stylesheet" href="assets/styles/home&disc.css">
+</head>
+
+<body>
+    <!-- Barra de Navegação -->
+    <header>
+        <div class="barranav">
+            <div class="img1">
+                <img src="assets/img/LogoSpotify.png" alt="Icon Spotify">
+            </div>
+            <a href="home.html">Home</a>
+            <a href="discografia.html">Discografia</a>
+            <a href="sobre.html">Sobre</a>
+        </div>
+    </header>
+
+    <!-- Conteúdo do site -->
+    <main>
+        <div class="conteudo">
+            <section>
+                <h2 style="text-align: center;">Quem é Tyler, The Creator?</h2>
+                <div class="imagem" style="text-align: center;">
+                    <img style="margin-right: 10px;" src="assets/img/Icon1TTC.jpeg" alt="Icon #1 - Tyler, The Creator">
+                    <img style="margin-left: 10px;" src="assets/img/Icon2TTC.jpeg" alt="Icon #2 - Tyler, The Creator">
+                </div>
+                <p>
+                    ㅤㅤㅤTyler, The Creator, cujo nome de nascimento é <strong>Tyler Gregory Okonma</strong>, é um rapper,
+                    cantor, compositor, produtor musical e designer norte-americano. Ele nasceu em <strong>6 de março de
+                        1991</strong>, em <strong>Ladera Heights</strong>, Califórnia, Estados Unidos. Conhecido por sua
+                    criatividade multifacetada, Tyler é uma figura marcante na música contemporânea e na cultura pop.
+                </p>
+            </section>
+            <section>
+                <h2>Carreira Musical</h2>
+                <p>
+                    ㅤㅤㅤTyler começou sua carreira em 2007, fundando o coletivo musical <strong>Odd Future Wolf Gang Kill
+                        Them All (OFWGKTA)</strong>. Ele lançou seu primeiro mixtape, <em>"Bastard"</em>, em 2009,
+                    ganhando atenção com letras intensas e beats originais.
+                </p>
+                <p>Álbuns notáveis incluem:</p>
+                <ul>
+                    <li><em>"Goblin"
+                            (2011):</em> Inclui o hit "Yonkers", marcando sua
+                        ascensão ao estrelato.</li>
+                    <li><em>"Wolf"
+                            (2013):</em> Um álbum introspectivo que mostrou seu
+                        crescimento como artista.</li>
+                    <li><em>"Cherry Bomb"
+                            (2015):</em> Experimental, com influências de
+                        jazz e soul.</li>
+                    <li><em>"Flower Boy"
+                            (2017):</em> Aclamado pela crítica, trouxe um
+                        lado mais emocional e vulnerável.</li>
+                    <li><em>"IGOR"
+                            (2019):</em> Vencedor do <strong>Grammy de Melhor
+                            Álbum de Rap</strong>, misturando gêneros.</li>
+                    <li><em>"Call Me If You Get
+                            Lost"</a> (2021):</em> Outro álbum vencedor
+                        do Grammy.</li>
+                    <li><em>"CHROMAKOPIA"
+                            (2024):</em> Um álbum conceitual e introspectivo, onde podemos conhecer o verdadeiro Tyler.
+                    </li>
+                    <li><em>"DON'T TAP THE GLASS"
+                            (2025):</em> Último álbum lançado até então.
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2>Moda e Design</h2>
+                <p>
+                    ㅤㅤㅤAlém da música, Tyler é o fundador da marca de roupas <strong><a href="https://golfwang.com/"
+                            target="_blank">Golf
+                            Wang</a></strong> e da linha de
+                    sapatos <strong><a href="https://golflefleur.com/" target="_blank">Golf le Fleur</a></strong>,
+                    conhecidas por seus
+                    designs inovadores e cores vibrantes.
+                </p>
+            </section>
+            <section>
+                <h2>Influências e Legado</h2>
+                <p>
+                    ㅤㅤㅤTyler é amplamente reconhecido por quebrar barreiras na música e desafiar normas de gênero e
+                    identidade. Suas influências incluem artistas como Pharrell Williams e grupos de jazz e soul.
+                </p>
+            </section>
+            <section>
+                <h2>Vida Pessoal</h2>
+                <p>
+                    ㅤㅤㅤTyler mantém sua vida pessoal em grande parte privada, embora aborde temas de identidade e
+                    sexualidade em sua música. Ele é conhecido por sua personalidade carismática e paixão por carros
+                    vintage e design.
+                </p>
+            </section>
+        </div>
+        <!-- Comando de botão para voltar ao início da página -->
+        <div>
+            <button id="toTopBtn" onclick="scrollToTop()">↑ Volte para o Início ↑</button>
+            <script>
+                const toTopBtn = document.getElementById('toTopBtn');
+
+                // Mostra o botão ao chegar perto do final da página
+                window.onscroll = function () {
+                    const scrollPosition = window.innerHeight + window.scrollY;
+                    const documentHeight = document.body.offsetHeight;
+
+                    if (scrollPosition >= documentHeight - 100) {
+                        toTopBtn.style.display = 'block'; // Mostra o botão
+                    } else {
+                        toTopBtn.style.display = 'none'; // Esconde o botão
+                    }
+                };
+
+                function scrollToTop() {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+            </script>
+
+
+        </div>
+    </main>
+
+    <footer>&copy;Todos os Direitos Reservados a Guthiarleyson Medeiros</footer>
+</body>
+
+</html>
