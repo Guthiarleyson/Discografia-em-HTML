@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #EBEBEB;
+}
+
+.barranav {
+    background-color: #333;
+    display: flex;
+    padding: 10px;
+    border-style: solid;
+    border-radius: 30px;
+    border-color: #444;
+}
+
+.barranav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.barranav a:hover {
+    background-color: #4e4e4e;
+    border-radius: 5px;
+    transition: background-color 0.4s ease;
+}
+
+.img1 img {
+    border: 2px solid #575757;
+    border-radius: 100px;
+    height: 35px;
+    width: 35px;
+    text-align: justify;
+}
+.imagem img {
+    border: 2px solid #575757;
+    border-radius: 100px;
+    height: 370px;
+    width: 370px;
+}
+.image img {
+    border: 2px solid #575757;
+    border-radius: 50px;
+    height: 500px;
+    width: 281px;
+}
+h1, h2, h3, h4 {
+    color: #444;
+}
+section {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    text-align: justify;
+}
+.formulario {
+    margin: 50px auto; /*espaçamento vertical */
+    padding: 20px;
+    width: 400px;
+    border-radius: 8px;
+    text-align: left;
+    color: #444;
+}
+
+.formulario h4 {
+    color: #444;
+    font-size: 22px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 13px;
+    background-color: #fff;
+    color: #000;
+}
+
+/* Estilo placeholders */
+input::placeholder,
+textarea::placeholder {
+    color: #444;
+    opacity: 1; /*visibilidade */
+}
+
+form button {
+    background-color: #19B551;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #117836;
+    
+}
+
+/* Botão de volta para o início da aba */
+#toTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #19B551;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    display: none; /* Esconde o botão inicialmente */
+    transition: background-color 0.3s ease;
+  }
+  #toTopBtn:hover {
+    background-color: #117836;
+  }
+footer {
+    text-align: center;
+}
